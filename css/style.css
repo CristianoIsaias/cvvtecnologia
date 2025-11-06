@@ -4,47 +4,57 @@ body{
     
     height: auto;
     font-family: 'Times New Roman', Times, serif;    
-    border: 2px solid #265180;
+    /* border: 2px solid #265180; */
     
 }
+.container-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.container-index1{   
+}
+.container-logo img{
+    width: clamp(50px,25vw,250px);
+    filter: contrast(3.9);
+}
+
+#container-index1{   
     background-image:url(../img/ninguem-na-estacao-de-trabalho-call-center-vazio-com-computadores-e-instrumentos-de-audio-nao-ha-pessoas-nos-balcoes-de-atendimento-ao-cliente-com-tecnologia-de-telecomunicacoes-oferecendo-assistencia-de-linha-de-a.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-position: left;
-    max-width: auto;
-    height:700px;       
+    min-height: 100vh;       
 }
-.container-index2{
+#container-index2{
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+        
 }
 .container-h1{
     /* width: 1000px; */
-    font-size: clamp(25px,5vw,32px);
+    font-size: clamp(15px,3vw,32px);
     color: #265180;
     display: flex;
     align-items: center;    
     justify-content: center;    
     flex-direction: column;
-    height: 700px;
+    min-height: 100vh;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 
 }
 .container-anuncio{
     font-size: clamp(23px,5vw,60px);
-    width: 1200px;
+    width: 100%;
     text-align: center;
     height: 150px;
     /* background-color: #00000085; */
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 .container-anuncio span{
     color:#265180;
@@ -55,7 +65,7 @@ body{
     letter-spacing: 0px;
 }
 .container-p{
-    font-size: clamp(13px,5vw,24px);
+    font-size: clamp(15px,4vw,24px);
     color: #265180;
     /* width: 1000px;    */
     text-align: center;   
@@ -65,47 +75,55 @@ body{
     width: 100%;
     line-height: 30px;
     }
-.container-index3{
+#container-index3{
     background-image: url(../img/making-deal-young-people-working-call-center-new-deals-is-coming.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 700px;
+    min-height: 100vh;
+    /* background-color: #000; */
+    /* filter: brightness(0.7); */
+    transition: transform 0.5s ease;
    
+}
+#container-index3:hover{
+    transform: scale(1.1);
 }
 .container-index3b{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    min-height: 100vh;
    
 }
 .container-h2 {
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;    
-    color: #265180;
-    font-size: clamp(25px,5vw,32px);
+    color: red;
+    font-size: clamp(15px,3vw,32px);
     text-align: center;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container-h2 h1{
-   -webkit-text-stroke: #898989 0.7px;
-    
+   -webkit-text-stroke: #fff 0.9px;
+    flex-wrap: nowrap;
 }
 .container-p2{
     font-size: clamp(13px,5vw,18px);
     color: #265180;
-    width: 1000px;   
+    max-width: 1000px;
+    width: 100%;   
     text-align: center;   
     gap:50px;
     
     }
-    .container-index4{
+    #container-index4{
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
     
     
 }
@@ -119,62 +137,78 @@ body{
     
 }
 .container-h3{
-    width: 1000px;
-    font-size: clamp(25px,5vw,30px);
+    max-width: 1000px;
+    width: 100%;
+    font-size: clamp(13px,3vw,32px);
     color: #265180;
     height: 150px;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .container-p3{
-    font-size: clamp(13px,5vw,18px);
+    font-size: clamp(12px,4vw,18px);
     color: #265180;
-    width: 1000px;   
+    width: auto;   
     text-align: center;  
     /* gap:50px; */
     /* display: inline-block; */
-    
+    max-width: 1000px;
+    width: 100%;
     line-height: 30px;
     }
     .container-server{
         display: flex;
         justify-content: center;
     }
-.container-servico div{
-    width:290px;
-    height: 250px;
+    #container-servico{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+#container-servico div{
+    /* max-width:150px; */
+    width: clamp(75px, 25vw, 290px);
+    height:clamp(108px, 25vw, 260px);
     border: 1px solid #265180;
     display: inline-block;
+    /* flex-wrap: wrap; */
     /* outline: 1px solid #898989;
     outline-offset: 4px; */
 }
-.container-servico img{
-    width: 290px;
-    height: 250px;
+#container-servico img{
+    /* max-width: 150px; */
+    width: clamp(75px, 25vw, 290px);
+    height:clamp(108px, 25vw, 260px);
 }
+
+/* menu hamburguer------------------ */
+
+.container-nav{
+     width: auto;
+    height: 60px;
+    background-color: #265180;
+    display: none;
+}
+.container-muda{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 60px;
     
-.container-prime{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
+
+}
+.container-hamburguer div{
+    width:40px;
+    height:5px;
+    background-color:#fff;
+    margin-top:7px;
    
-}
-
-.container-caixa{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    gap:700px;
-    
-    }
-
-.container-caixa img{
-    width: 180px;
-    padding:40px; 
-    filter: contrast(3.9);
 }
 .container-menu{
     width: 100%;
@@ -194,12 +228,12 @@ body{
 }
 
 
-.container-nav{
+/* .container-nav{
     width: auto;
     height: 60px;
-    background-color: black;
+    background-color: #265180;
     
-}
+} */
 
 nav ul{
     list-style: none;
@@ -247,6 +281,12 @@ opacity: 0.5
     align-items: center;
     height: 80px;
 }
+.container-index5{
+    width: 100;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+}
 .container-alinhar{
     display: flex;    
     align-items: center;
@@ -260,32 +300,45 @@ opacity: 0.5
     color:#265180;
     -webkit-text-stroke: #898989 1px;
    }
+   .container-form{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   }
    form input, textarea{
-    width: 700px;
+    width: clamp(353px, 50vw, 700px);
     height: 20px;
-    margin: 5px;
+    margin: 8px 5px 5px 15px;
     padding: 5px;
     text-transform: capitalize;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    /* height: 0px; */
    }
    textarea{
-    width: 702px;
+    width: clamp(353px, 50vw, 700px);
+    padding: 6px;
     height: 100px;
     font-size: clamp(15px,5vw,18px);
     font-family:Arial, Helvetica, sans-serif;
+    margin: 10px 5px 5px 15px;
    }
    form input{
     font-size: clamp(15px,5vw,18px);
    }
    
 .btn-submit{
-    padding: 10px;   
+    /* padding: 10px;    */
     /* border-radius: 8px;    */
     border: 1px solid #696565; 
     margin-top: 10px;
-    width: 713px;
+    width: clamp(370px, 50vw,713px);
+    /* width: 100%; */
     background-color: #265180;
     cursor: pointer;
     font-size: clamp(15px, 5vw, 20px);
@@ -339,10 +392,7 @@ footer p{
     display: flex;
     flex-direction: row;
 }
-/* .container-social span{     
-    display: flex;
-    
-} */
+
  .container-contato{
     display: flex;
     flex-direction: column;
@@ -364,19 +414,21 @@ footer p{
 .contaner-contato span{
     display: flex;
     align-items: center;
-   /* gap: 300px;  */
+    
 }
 .container-endereco{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: clamp(250px);
     justify-content: center;
     flex-wrap: wrap;
     /* border: 1px solid #fff; */
+    
 }
 .container-endereco div{
     display: flex;
     justify-content: center;
+    
 }
 .container-endereco img{
     width: 50px;
@@ -389,5 +441,91 @@ footer p{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
+/*Efeito com javascript, opacity:0 some as paginas e opacity:1 aparecem */
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+ }
+ .show{
+    opacity:1;
+    filter: blur(0px);
+    transition: all 2s;
+    transform: translateX(0);
+ }
+
+.container-servico :nth-child(2){
+    transition-delay: 300ms;
+}
+.container-servico :nth-child(3){
+    transition-delay: 700ms;
+}
+.container-servico :nth-child(4){
+    transition-delay: 1000ms;
+}
+.container-servico :nth-child(5){
+    transition-delay: 1300ms;
+}
+.container-servico :nth-child(1){
+    transition-delay: 1600ms;
+}
+
+/* -----------------------------Inciando definiçao responsiva--------------------------- */
+
+@media screen and (max-width: 768px) {
+    #container-index1{
+        display: block;
+        background-image:none;
+    }
+    #container-index{
+        width: 50%;
+    }
+    .container-anuncio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        height: 108px;
+    }
+    .container-nav{
+     width: auto;
+    height: 60px;
+    background-color: #265180;
+    display: block;
+}
+    .container-muda{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 60px;   
+
+}
+.container-hamburguer div{
+    width:40px;
+    height:5px;
+    background-color:#fff;
+    margin-top:7px;   
+}
+.container-endereco{
+    display: block;
+
+}
+.container-caixa2{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   /* height: 150px;  */
+   gap: 25px;
+   
+   /* border: 1px solid #fff; */
+
+}
+}
