@@ -4,7 +4,7 @@ body{
     
     height: auto;
     font-family: 'Times New Roman', Times, serif;    
-    /* border: 2px solid #265180; */
+    border: 2px solid #265180;
     
 }
 .container-logo{
@@ -26,6 +26,9 @@ body{
     min-height: 100vh;       
 }
 #container-index2{
+    background-image: url(../img/trabalhoTi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -47,7 +50,7 @@ body{
 
 }
 .container-anuncio{
-    font-size: clamp(23px,5vw,60px);
+    font-size: clamp(23px,5vw,70px);
     width: 100%;
     text-align: center;
     height: 150px;
@@ -59,7 +62,7 @@ body{
 .container-anuncio span{
     color:#265180;
     font-weight:bolder;
-    -webkit-text-stroke: rgb(12, 255, 255) 0.1px;
+    -webkit-text-stroke: #fff 0.1px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: bold;
     letter-spacing: 0px;
@@ -101,7 +104,7 @@ body{
     display: flex;    
     justify-content: center;
     align-items: center;    
-    color: red;
+    color: #265180;
     font-size: clamp(15px,3vw,32px);
     text-align: center;
     max-width: 1000px;
@@ -379,6 +382,7 @@ footer p{
     display: flex;
     flex-direction: row;
     gap: 5px;
+    cursor: pointer;
 }
 .container-social div{
      width: 30px;
@@ -396,7 +400,7 @@ footer p{
  .container-contato{
     display: flex;
     flex-direction: column;
-    
+    cursor: pointer;
  }
  .container-contato div{
     display: flex;
@@ -423,7 +427,7 @@ footer p{
     justify-content: center;
     flex-wrap: wrap;
     /* border: 1px solid #fff; */
-    
+    cursor: pointer;
 }
 .container-endereco div{
     display: flex;
@@ -431,8 +435,8 @@ footer p{
     
 }
 .container-endereco img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     
@@ -442,6 +446,13 @@ footer p{
     flex-direction: row;
     align-items: center;
     
+}
+iframe{
+    width: 150px;
+    height: 100px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
 }
 
 /*Efeito com javascript, opacity:0 some as paginas e opacity:1 aparecem */

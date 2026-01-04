@@ -48,7 +48,7 @@
    </nav>
         
          <div class="container-anuncio">
-        <span>Cuidamos da sua TI para que você cuide do seu sucesso.</span>
+        <span id="anuncio1">Cuidamos da sua TI para que você cuide do seu sucesso.</span>
     </div>
        </div>     
     </div>
@@ -56,7 +56,7 @@
     </div>
      
         
-    <div id="container-index2" class="hidden">
+    <div id="container-index2" >
         <div class="container-h1">
             <h1>Trabalhamos com as melhores soluções de TI</h1>
         
@@ -69,7 +69,7 @@
         </div>
         </div>
     </div>
-    <div id="container-index3" class="hidden">
+    <div id="container-index3" class="">
         <div class="container-index3b">
         <div class="container-h2">
             <h1>Fazemos atendimento remoto ou presencial</h1>
@@ -122,11 +122,11 @@
                               
             <form id="formulario" action="" method="get">
                
-               <input type="text" name="nome" value="" placeholder="nome completo">
-               <input type="text" name="email" value="" placeholder="e-mail">
-               <input type="text" name="telefone" value="" placeholder="telefone">
+               <input type="text" name="nome" value="" placeholder="nome completo" id="nome">
+               <input type="email" name="email" value="" placeholder="e-mail" id="email">
+               <input type="tel" name="telefone" value="" placeholder="telefone" id="telefone">
                <textarea name="assunto" id="assunto" cols="53" rows="9" placeholder="Descreva"></textarea>
-               <input type="submit" value="Enviar"class=btn-submit>
+               <input type="submit" value="Enviar"class=btn-submit id="btn-enviar" onmouseover="btnColor()" onmouseout="btnColorOut()">
               </form>
               
              </div>
@@ -161,8 +161,11 @@
                 </div>              
 
                 <div class="container-endereco">
-                    <div><img src="img/home-removebg-preview.png" alt="">
+                     <div><img src="img/home-removebg-preview.png" alt="">
                     <span>Rua: Nancy Silva Cabral - 514 Bairro: Continental II</span>
+                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1767522785655!6m8!1m7!1sPqW9rVuiG8ZK45PnwDYryg!2m2!1d-23.42677744384716!2d-46.54836018065593!3f32.63!4f0!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
                     </div>
                 </div>
 
