@@ -24,9 +24,9 @@ mostrarAnuncio();
 // Validando o formulário
 
 
-// formulario.addEventListener('submit', (e) => {
-//     if(!nome.value || !email.value || !telefone.value || !assunto.value){
-//         // e.preventDefault()
+formulario.addEventListener('submit', (e) => {
+    if(!nome.value || !email.value || !telefone.value || !assunto.value){
+        // e.preventDefault()
 nome.addEventListener('input', () => {
     nome.value = nome.value.replace(/[^a-zA-Z\s]/g, '')
 })
