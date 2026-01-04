@@ -122,12 +122,14 @@
 
             <div class="container-alinhar">  
                               
-            <form id="formulario" action="form.php" method="Post">
-               
-               <input type="text" name="nome" value="" placeholder="nome completo" id="nome">
-               <input type="email" name="email" value="" placeholder="e-mail" id="email">
-               <input type="tel" name="telefone" value="" placeholder="telefone" id="telefone">
-               <textarea name="assunto" id="assunto" cols="53" rows="9" placeholder="Descreva"></textarea>
+            <form action="https://formspree.io/f/mnjnorpp" method="POST" id="formulario">   
+                
+                <input type="hidden" name="_redirect" value="https://cvvtecnologia.vercel.app/index.html">
+
+               <input type="text" name="nome" placeholder="nome completo"required id="nome" >
+               <input type="email" name="email"placeholder="e-mail"required id="email">
+               <input type="tel" name="telefone"placeholder="telefone"required id="telefone">
+               <textarea name="assunto"required id="assunto" cols="53" rows="9" placeholder="Descreva"></textarea>
                <input type="submit" value="Enviar"class=btn-submit id="btn-enviar" onmouseover="btnColor()" onmouseout="btnColorOut()">
               </form>
               

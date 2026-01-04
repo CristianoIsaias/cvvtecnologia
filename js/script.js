@@ -2,7 +2,8 @@ const nome = document.querySelector('#nome')
 const email = document.querySelector('#email')
 const telefone = document.querySelector('#telefone')
 const assunto = document.querySelector('#assunto')
-const formulario = document.querySelector('#formulario')    
+const formulario = document.querySelector('#formulario')  
+const status = document.querySelector('#status')      
 
 // Efeito de escrita de máquina de escrever no primeiro anúncio do site.
 const anuncio1 = document.getElementById('anuncio1').textContent;
@@ -21,9 +22,11 @@ function mostrarAnuncio(){
 mostrarAnuncio();
 
 // Validando o formulário
-formulario.addEventListener('submit', (e) => {
-    if(!nome.value || !email.value || !telefone.value || !assunto.value){
-        e.preventDefault()
+
+
+// formulario.addEventListener('submit', (e) => {
+//     if(!nome.value || !email.value || !telefone.value || !assunto.value){
+//         // e.preventDefault()
 nome.addEventListener('input', () => {
     nome.value = nome.value.replace(/[^a-zA-Z\s]/g, '')
 })
@@ -38,6 +41,8 @@ telefone.addEventListener('input', () => {
 assunto.addEventListener('input', () => {
     assunto.value = assunto.value.replace(/[^a-zA-Z0-9\s.,!?]/g, '')
 })
+
+    
 
     alert(' Por favor preencha todos campos do Formulário!')
 
@@ -76,3 +81,12 @@ function btnColorOut(){
     const btn = document.querySelector('#btn-enviar')
     btn.style.backgroundColor = '#265180'
 }
+
+emailjs.send("service_id", "template_id", {
+  nome: nome,
+  email: email,
+  telefone: telefone,
+  assunto: assunto  
+});
+
+
