@@ -42,10 +42,10 @@ assunto.addEventListener('input', () => {
     }else{
         alert('Formulário enviado com sucesso!')
     }
-    e.preventDefault()
+    
     alert('Por favor preencha todos campos do Formulário!')
 
-    
+    e.preventDefault()
     formulario.reset()
 })  
 
