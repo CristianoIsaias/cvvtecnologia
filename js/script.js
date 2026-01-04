@@ -39,12 +39,12 @@ assunto.addEventListener('input', () => {
     assunto.value = assunto.value.replace(/[^a-zA-Z0-9\s.,!?]/g, '')
 })
 
-    alert('Formulário enviado com sucesso!')
+    alert(' Por favor preencha todos campos do Formulário!')
 
     }else{
-        
-    alert('Por favor preencha todos campos do Formulário!')    
-    }    
+    alert(' Formulário enviado com sucesso!')    
+    }
+    
     
 
     e.preventDefault()
