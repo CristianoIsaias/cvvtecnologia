@@ -23,7 +23,7 @@ mostrarAnuncio();
 // Validando o formulário
 formulario.addEventListener('submit', (e) => {
     if(!nome.value || !email.value || !telefone.value || !assunto.value){
-
+        e.preventDefault()
 nome.addEventListener('input', () => {
     nome.value = nome.value.replace(/[^a-zA-Z\s]/g, '')
 })
@@ -42,12 +42,12 @@ assunto.addEventListener('input', () => {
     alert(' Por favor preencha todos campos do Formulário!')
 
     }else{
+
     alert(' Formulário enviado com sucesso!')    
-    }
-    
+    }    
+
     
 
-    e.preventDefault()
     formulario.reset()
 })  
 
