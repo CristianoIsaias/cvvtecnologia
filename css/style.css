@@ -154,13 +154,10 @@ body{
 .container-p3{
     font-size: clamp(12px,4vw,18px);
     color: #265180;
-    width: auto;   
-    text-align: center;  
-    /* gap:50px; */
-    /* display: inline-block; */
     max-width: 1000px;
     width: 100%;
-    line-height: 30px;
+    line-height: 25px;
+    
     }
     .container-server{
         display: flex;
@@ -491,7 +488,13 @@ iframe{
 @media screen and (max-width: 768px) {
     #container-index1{
         display: block;
-        background-image:none;
+        background-image:none;          
+    }
+    #logo-anuncio{
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        height: 400px;
     }
     #container-index{
         width: 50%;
@@ -500,8 +503,35 @@ iframe{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* flex-wrap: wrap; */
         height: 108px;
+    }
+    #container-index2{
+        background-image: url(../img/img-movel.jpg);
+        background-repeat: no-repeat;          
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+           }
+    #container-index3{
+        background-image: url(../img/profissional-de-ti-que-trabalha-para-garantir-o-funcionamento-eficiente-equipamento-centro-de-dados\ \(1\).jpg);
+        background-repeat: no-repeat;          
+        background-size: cover;
+        min-height: 100vh;
+    }       
+    .container-h1{
+        position: relative;
+        bottom: 100px;
+    }
+    .container-p3{
+        position: relative;
+    bottom: 50px;
+    text-align: center;
+    }
+    #container-servico{
+     position: relative;
+    bottom: 40px;   
+    }
+
     }
     .container-nav{
      width: auto;
@@ -524,7 +554,7 @@ iframe{
     margin-top:7px;   
 }
 .container-endereco{
-    display: block;
+    display: ;
 
 }
 .container-caixa2{
@@ -532,11 +562,30 @@ iframe{
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   flex-direction: column;
+   /* flex-direction: column; */
    /* height: 150px;  */
-   gap: 25px;
+   gap: 150px;
    
    /* border: 1px solid #fff; */
 
 }
+.container-social {    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+}
+.container-social div{
+     width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.container-social img{
+     width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin:5px 5px 5px 5px;
 }
