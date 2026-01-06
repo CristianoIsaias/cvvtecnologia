@@ -86,12 +86,12 @@ body{
     min-height: 100vh;
     /* background-color: #000; */
     /* filter: brightness(0.7); */
-    transition: transform 0.5s ease;
+    /* transition: transform 0.5s ease; */
    
 }
-#container-index3:hover{
+/* #container-index3:hover{
     transform: scale(1.1);
-}
+} */
 .container-index3b{
     display: flex;
     flex-direction: column;
@@ -189,10 +189,13 @@ body{
 /* menu hamburguer------------------ */
 
 .container-nav{
-     width: auto;
+    width: auto;
     height: 60px;
     background-color: #265180;
     display: none;
+}
+.container-nav:hover{
+    cursor: pointer;
 }
 .container-muda{
    display: flex;
@@ -208,6 +211,7 @@ body{
     height:5px;
     background-color:#fff;
     margin-top:7px;
+    
    
 }
 .container-menu{
@@ -485,10 +489,11 @@ iframe{
 
 /* -----------------------------Inciando definiçao responsiva--------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)   {
     #container-index1{
-        display: block;
-        background-image:none;          
+        background-image: url(../img/escritorio-moderno-com-ninguem-presente.jpg);   
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #logo-anuncio{
         display: flex;
@@ -532,12 +537,12 @@ iframe{
     bottom: 40px;   
     }
 
-    }
+    
     .container-nav{
      width: auto;
     height: 60px;
     background-color: #265180;
-    display: block;
+    display:block;
 }
     .container-muda{
    display: flex;
@@ -553,10 +558,10 @@ iframe{
     background-color:#fff;
     margin-top:7px;   
 }
-.container-endereco{
+/* .container-endereco{
     display: ;
 
-}
+} */
 .container-caixa2{
    display: flex;
    flex-direction: row;
@@ -564,7 +569,7 @@ iframe{
    justify-content: center;
    /* flex-direction: column; */
    /* height: 150px;  */
-   gap: 150px;
+   /* gap: 150px; */
    
    /* border: 1px solid #fff; */
 
@@ -588,4 +593,10 @@ iframe{
     display: flex;
     flex-direction: row;
     margin:5px 5px 5px 5px;
+}
+.container-caixa2{
+    flex-direction: column;
+    gap: 10px;
+    align-items:baseline;
+}
 }
