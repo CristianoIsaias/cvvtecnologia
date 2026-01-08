@@ -89,4 +89,10 @@ emailjs.send("service_id", "template_id", {
   assunto: assunto  
 });
 
+// Função para abrir o menu hamburguer
+function abrirMenu() {
+  const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+
 

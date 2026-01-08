@@ -1,0 +1,49 @@
+
+#navbar {
+    background-color: red;
+    padding: 10px;
+    
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    float: left;
+    margin: 30px 30px 40px 0px;
+    padding: 0;
+    
+}
+
+#menu li a {
+    color:black;
+    margin: 30px 30px 40px 0px;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-hamburguer div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+}
