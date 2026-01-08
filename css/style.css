@@ -438,16 +438,16 @@ iframe{
     }       
     .container-h1{
         position: relative;
-        bottom: 100px;
+        bottom: 70px;
     }
     .container-p3{
-        position: relative;
-    bottom: 50px;
+    position: relative;
+    bottom: 20px;
     text-align: center;
     }
     #container-servico{
      position: relative;
-    bottom: 40px;   
+    top: 20px;   
     }
 
     
