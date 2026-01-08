@@ -337,6 +337,7 @@ footer p{
     flex-wrap: wrap;
     /* border: 1px solid #fff; */
     cursor: pointer;
+    
 }
 .container-endereco div{
     display: flex;
@@ -356,8 +357,22 @@ footer p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+     
 }
+.container-endereco a{
+    color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    flex-direction: row;
+    text-decoration: none;
+    margin-left: 70px;
+}
+/* .container-endereco div{
+    margin: ;
+} */
+
 iframe{
     width: 150px;
     height: 100px;
@@ -551,6 +566,9 @@ opacity: 0.5
     margin:5px 5px 5px 5px;
 }
 
-
+.container-endereco a{
+    
+    margin-left: 25gi0px;
+}
    
 }
